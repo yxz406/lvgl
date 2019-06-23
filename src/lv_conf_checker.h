@@ -420,6 +420,7 @@
 #define LV_TXT_LINE_BREAK_LONG_POST_MIN_LEN 3
 #endif
 
+
 /*===================
  *  LV_OBJ SETTINGS
  *==================*/
