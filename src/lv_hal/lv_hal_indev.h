@@ -79,7 +79,7 @@ typedef struct _lv_indev_drv_t
 
     /** Called when an action happened on the input device.
      * The second parameter is the event from `lv_event_t`*/
-    void (*feedback_cb)(struct _lv_indev_drv_t *, uint8_t);
+    void (*feedback_cb)(struct _lv_indev_drv_t *, uint8_t, void *);
 
 #if LV_USE_USER_DATA
     lv_indev_drv_user_data_t user_data;

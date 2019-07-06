@@ -1356,7 +1356,7 @@ lv_res_t lv_event_send_func(lv_event_cb_t event_xcb, lv_obj_t * obj, lv_event_t 
     /*Call the input device's feedback callback if set*/
     lv_indev_t * indev_act = lv_indev_get_act();
     if(indev_act) {
-        if(indev_act->driver.feedback_cb) indev_act->driver.feedback_cb(&indev_act->driver, event);
+        if(indev_act->driver.feedback_cb) indev_act->driver.feedback_cb(&indev_act->driver, event, data);
     }
 
     /*Call the event callback itself*/
